@@ -11,7 +11,7 @@ const images = [
 export default function ImageZoom() {
   const renderItem = (item) => {
     return (
-      <PinchZoom>
+      <PinchZoom className={''} debug={false} minZoomScale={0} maxZoomScale={0} boundSize={undefined} contentSize={undefined}> 
         <img
           src={item.original}
           alt={item.originalAlt}
